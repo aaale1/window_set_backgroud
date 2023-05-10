@@ -1,0 +1,2 @@
+# window_set_backgroud
+一个突发奇想，想要实时将bing的网页背景设置为电脑屏幕背景的自动程序
