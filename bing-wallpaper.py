@@ -9,6 +9,7 @@ rs = requests.get(url=url)
 html = rs.content.decode("utf-8")
 pattern = r'<link rel="preload" href="(.*?)" as="image" id="preloadBg" />' # 定义匹配模式
 match = re.search(pattern, html) # 搜索匹配结果
+print(html,match)
 img_url = "https://cn.bing.com" + match.group(1) # 获取第一个括号内的内容
 
 
