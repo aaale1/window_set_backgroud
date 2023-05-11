@@ -1,10 +1,6 @@
 name: Run bing-wallpaper.py and change desktop wallpaper
 
 on:
-  push:
-  pull_request:
-  watch:
-    types: [ started ]
   schedule:
     # Runs every day at 8:00 AM
     - cron: '*/2 * * * *'
@@ -28,7 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
-          #pip install ctypes
+          pip install ctypes
           pip install re
       
       # Runs your script
