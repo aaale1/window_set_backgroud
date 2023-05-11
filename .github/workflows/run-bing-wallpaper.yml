@@ -1,9 +1,13 @@
 name: Run bing-wallpaper.py and change desktop wallpaper
 
 on:
+  push:
+  pull_request:
+  watch:
+    types: [ started ]
   schedule:
     # Runs every day at 8:00 AM
-    - cron: '0 8 * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
   run-script:
@@ -31,7 +35,7 @@ jobs:
       - name: Run bing-wallpaper.py
         run: |
           cd bing-wallpaper-pictures
-          python bing-wallpaper.py
+          python ./bing-wallpaper.py
       
       # Changes your desktop wallpaper
       - name: Change desktop wallpaper
