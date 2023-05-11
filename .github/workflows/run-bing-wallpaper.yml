@@ -34,7 +34,7 @@ jobs:
       # Runs your script
       - name: Run bing-wallpaper.py
         run: |
-          cd bing-wallpaper-pictures
+          #cd bing-wallpaper-pictures
           python ./bing-wallpaper.py
       
       # Changes your desktop wallpaper
