@@ -12,6 +12,7 @@ match = re.search(pattern, html) # 搜索匹配结果
 img_url = "https://cn.bing.com" + match.group(1) # 获取第一个括号内的内容
 
 
+
 # 下载图片到本地
 img_rs = requests.get(url=img_url)
 img_path = "E:\\bing-wallpaper-pictures\\bing_wallpaper.jpg" # 你可以修改图片的保存路径
