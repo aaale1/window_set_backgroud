@@ -4,7 +4,7 @@ import re
 
 
 # 获取bing的网页背景图片的链接
-url = "https://bing.com"
+url = "https://cn.bing.com"
 rs = requests.get(url=url)
 html = rs.content.decode("utf-8")
 pattern = r'<link rel="preload" href="(.*?)" as="image" id="preloadBg" />' # 定义匹配模式
