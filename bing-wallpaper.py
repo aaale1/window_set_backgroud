@@ -14,7 +14,7 @@ print(img_url)
 
 # 下载图片到本地
 img_rs = requests.get(url=img_url)
-img_path = "E:\\bing-wallpaper-pictures\\bing_wallpaper.jpg" # 你可以修改图片的保存路径
+img_path = "bing_wallpaper.jpg" # 你可以修改图片的保存路径
 with open(img_path, "wb") as f:
     f.write(img_rs.content)
 
