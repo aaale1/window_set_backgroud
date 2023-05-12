@@ -1,13 +1,13 @@
 name: Run bing-wallpaper.py and change desktop wallpaper
 
-on:
-  push:
-  pull_request:
-  watch:
-    types: [ started ]
-  schedule:
-    # Runs every day at 8:00 AM
-    - cron: '*/2 * * * *'
+# on:
+#   push:
+#   pull_request:
+#   watch:
+#     types: [ started ]
+#   schedule:
+#     # Runs every day at 8:00 AM
+#     - cron: '*/2 * * * *'
 
 jobs:
   run-script:
