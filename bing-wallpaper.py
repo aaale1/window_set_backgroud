@@ -4,11 +4,11 @@ import re
 from lxml import etree
 
 # 获取bing的网页背景图片的链接
-url = "https://cn.bing.com"
+url = "https://www.bing.com"
 headers = {"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.35"}
 rs = requests.get(url=url,headers=headers)
 html = etree.HTML(rs.content)
-img_url = "https://cn.bing.com" + html.xpath('//meta[@property="og:image"]/@content')[0] # 获取第一个括号内的内容
+img_url = "https://www.bing.com" + html.xpath('//meta[@property="og:image"]/@content')[0] # 获取第一个括号内的内容
 print(img_url)
 
 
