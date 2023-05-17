@@ -5,7 +5,9 @@ bing-wallpaper.py文件里面包含三个部分，一个是爬虫，从cn.bing�
 在代码中，为了方便debug，加入了logging库，会自动保存当次运行时图片的网址、更改系统配置时的状态。如下是一次示例：具体在后面会解释。
 
 2023-05-16 16:03:09,428 - INFO - Downloading image from  https://www.bing.com/th?id=OHR.AmericanWetlands_ZH-CN7534567518_1920x1080.webp&qlt=50
+
 2023-05-16 16:03:09,725 - INFO - 0
+
 2023-05-16 16:03:09,726 - INFO - 1459
 
 最后，这个代码是可行的，我手动以及cmd中运行能完美的更改壁纸，注意，其中的文件路径均是相对路径，只有log.txt为绝对路径。
